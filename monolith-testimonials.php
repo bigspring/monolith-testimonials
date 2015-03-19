@@ -73,7 +73,7 @@ class MonolithTestimonialsWidget extends WP_Widget {
 
         // add OR-type tag search to query
         if ($current_tags) {
-            $params['tag__in'] = [];
+            $params['tag__in'] = array();
             foreach ($current_tags as $tag) {
                 $params['tag__in'][] = $tag->term_id;
             }
